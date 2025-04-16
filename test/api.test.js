@@ -6,7 +6,7 @@ describe('lambdaHandler', () => {
   test('should return 200 and Hello World message', async () => {
     const result = await lambdaHandler({}, {});
 
-    expect(result.statusCode).toBe(100);
+    expect(result.statusCode).toBe(200);
 
     const body = JSON.parse(result.body);
     expect(body).toHaveProperty('message');
