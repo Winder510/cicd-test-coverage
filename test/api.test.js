@@ -1,6 +1,6 @@
 const {
   lambdaHandler
-} = require('../src/app'); // thay đường dẫn nếu khác
+} = require('../src/app');
 
 describe('lambdaHandler', () => {
   test('should return 200 and Hello World message', async () => {
